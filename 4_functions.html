@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        // // function declaration
+        // function sayHello() {
+        //     console.log('Hello there!')
+        // }
+
+        // // function execution
+        // sayHello()
+
+
+
+
+
+
+        // function parameters
+        function sayHello(firstName, lastName = 'DESCONOCIDO') {
+            console.log(`Hello ${firstName} ${lastName}!`)
+        }
+
+        // function arguments
+        sayHello('Mary', 'Doe')
+        sayHello('John', 'Whatever')
+        sayHello('Lucy')
+
+
+
+
+
+
+
+        function getBookingText(customer, cost, date) {
+            const text = `Estimado ${customer.firstName} ${customer.lastName}, su reserva para el día ${date} está confirmada (coste ${cost}€)`
+            return text
+
+            console.log('YO NUNCA SALDRÉ :3')
+        }
+
+        const booking1 = getBookingText({ firstName: 'Ger', lastName: 'Álvarez' }, 435, '18/ene')
+        const booking2 = getBookingText({ firstName: 'Lau', lastName: 'Sanchez' }, 65457, '18/ene')
+
+        console.log(booking1)
+        document.write(`<h1>${booking2}</h1>`)
+
+
+
+
+
+
+
+        // function return
+        function isMultiple(value1, value2) {
+            if (value1 % value2 === 0) {
+                return true
+            } else {
+                return false
+            }
+        }
+
+
+        const result = isMultiple(10, 5)
+        console.log('¿Son múltiplos 10 y 5?', result)
+
+
+
+
+        // Object return
+        function getUserInfo(firstName, lastName) {
+
+            const userInfo = {
+                firstName: firstName,
+                lastName: lastName
+            }
+
+            return userInfo
+        }
+
+        getUserInfo('ana', 'martinez')  // => { firstName: 'ana', lastName: 'martinez' }
+
+    </script>
+</body>
+
+</html>

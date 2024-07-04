@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        const drinks = ['Kas', 'Agua', 'Fanta', 'Coca-cola', 'Sprite']
+
+
+
+        //  forEach method iteration - step 1
+        function showDrinkName(eachDrink) {
+            console.log(`El nombre de la bebida es`, eachDrink)
+        }
+
+        drinks.forEach(showDrinkName)
+
+
+
+
+
+        //  forEach method iteration - step 2
+        drinks.forEach(function (eachDrink) {
+            console.log(`El nombre de la bebida es`, eachDrink)
+        })
+
+
+
+
+
+
+        //  forEach method iteration - step 3
+        drinks.forEach((eachDrink) => {
+            console.log(`El nombre de la bebida es`, eachDrink)
+        })
+
+
+
+
+
+        //  forEach method iteration - step 4
+        drinks.forEach((eachDrink) => console.log(`El nombre de la bebida es`, eachDrink))
+
+
+
+        console.log('EJEMPLO EXTRA')
+
+
+
+
+        const ages = [4, 3, 6, 4]
+
+        let sumAges = 0
+
+        ages.forEach((eachAge) => sumAges += eachAge)
+
+        console.log('Los años totales son', sumAges, 'y la media', sumAges / ages.length)
+
+
+
+
+    </script>
+</body>
+
+</html>
